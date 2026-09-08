@@ -1,16 +1,22 @@
 package com.example.lab04
 
-
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-// JUAN PABLO PUMAHUANCA
+//JUAN PABLO PUMAHUANCA
 @Composable
 fun MyCard() {
     Card(modifier = Modifier.padding(16.dp)) {
-        Text(text = "Este es un componente Card", modifier = Modifier.padding(16.dp))
+        Text(
+            text = "Card Actualizado con Estilos!",
+            modifier = Modifier.padding(16.dp),
+            color = Color.Blue,
+            fontWeight = FontWeight.Bold
+        )
     }
 }
